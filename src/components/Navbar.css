@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(216, 211, 197);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .navbar-logo .text-black {
+    color: black;
+  }
+  
+  .navbar-search input {
+    width: 800px; /* Adjust width as needed */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-selector {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .sign-in-btn {
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .hamburger-menu i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

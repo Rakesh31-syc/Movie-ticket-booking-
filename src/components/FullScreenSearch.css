@@ -1,0 +1,76 @@
+/* src/components/FullScreenSearch.css */
+
+.fullscreen-search {
+    position: fixed; /* Fixes the element to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    z-index: 9999; /* Ensures this is on top of everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-container {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-bar-container input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+.search-bar-container button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popular-searches {
+    width: 80%;
+    max-width: 600px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popular-searches h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.popular-searches ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-searches li {
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.popular-searches li:hover {
+    background-color: #ccb7b7;
+}

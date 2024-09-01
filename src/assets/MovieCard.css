@@ -1,0 +1,40 @@
+/* Assuming you are using Flexbox */
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 16px; /* Add space between items */
+    padding: 20px;
+}
+
+.movie-card {
+    flex: 0 1 calc(25% - 20px); /* Responsive item width, considering the gap */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%; /* Ensure image takes full width of the card */
+    height: auto;
+}
+
+.movie-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.movie-genre {
+    font-size: 14px;
+    color: #777;
+}

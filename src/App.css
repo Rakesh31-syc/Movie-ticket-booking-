@@ -1,0 +1,134 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #9d8e8e;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Carousel Styles */
+.carousel {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Movies Section Styles */
+.movies-section {
+  padding: 20px;
+}
+
+.movies-section h2 {
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+}
+
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.movie-card p {
+  font-size: 14px;
+}
+
+/* Movie Page Styles */
+.movie-page {
+  padding: 20px;
+  text-align: left;
+}
+
+.movie-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-page button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Theater Page Styles */
+.theater-page {
+  padding: 20px;
+  text-align: left;
+}
+
+.theater-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.theater-page li {
+  padding: 10px;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.theater-page li:hover {
+  background-color: #d0d0d0;
+}
+
+/* Seat Page Styles */
+.seat-page {
+  padding: 20px;
+  text-align: left;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 5px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #ff0000;
+}

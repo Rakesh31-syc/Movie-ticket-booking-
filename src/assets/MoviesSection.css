@@ -1,0 +1,64 @@
+
+.movies-section {
+    padding: 0 50px;
+     /* Add space on left and right sides */
+      display: flex;
+      flex-wrap: wrap; /* Ensure movie cards wrap onto the next line if needed */
+      gap: 20px; /* Adds space between the movie cards */
+      justify-content: center; /* Center movie cards within the section */
+    
+    
+    
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  
+  
+  .movies-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .movies-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .arrow {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .left {
+    left: -20px;
+  }
+  
+  .right {
+    right: -20px;
+  }
+  
+  @media (hover: hover) {
+    .arrow:hover {
+      background-color: #eee;
+    }
+  }
+  
